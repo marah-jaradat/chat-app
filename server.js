@@ -1,4 +1,9 @@
 const io = require("socket.io")(3000);
+const express = require("express");
+const app = express();
+// const http = require("http").server(app);
+var cors = require("cors");
+app.use(cors());
 
 const users = {};
 
